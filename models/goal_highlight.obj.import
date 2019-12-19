@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/goal_highlight.obj-7f0ae1ddc21b17269931e2cc5b669eca.mesh"
+
+[deps]
+
+files=[ "res://.import/goal_highlight.obj-7f0ae1ddc21b17269931e2cc5b669eca.mesh" ]
+
+source_file="res://models/goal_highlight.obj"
+dest_files=[ "res://.import/goal_highlight.obj-7f0ae1ddc21b17269931e2cc5b669eca.mesh", "res://.import/goal_highlight.obj-7f0ae1ddc21b17269931e2cc5b669eca.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

@@ -1,0 +1,26 @@
+[gd_resource type="Environment" load_steps=2 format=2]
+
+[sub_resource type="ProceduralSky" id=1]
+
+[resource]
+background_mode = 2
+background_sky = SubResource( 1 )
+background_color = Color( 0.145098, 0.145098, 0.313726, 1 )
+tonemap_exposure = 1.16
+tonemap_white = 0.84
+ssao_enabled = true
+ssao_radius = 2.4
+ssao_intensity = 2.1
+ssao_bias = 0.001
+ssao_light_affect = 0.5
+ssao_quality = 1
+ssao_blur = 2
+ssao_edge_sharpness = 8.03
+dof_blur_far_distance = 13.61
+dof_blur_far_transition = 9.69
+dof_blur_far_amount = 0.06
+dof_blur_near_distance = 8.55
+dof_blur_near_transition = 1.37
+dof_blur_near_amount = 0.13
+adjustment_enabled = true
+adjustment_contrast = 1.04

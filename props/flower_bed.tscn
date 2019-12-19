@@ -1,0 +1,54 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://models/flowers.escn" type="PackedScene" id=1]
+[ext_resource path="res://models/flower.escn" type="PackedScene" id=2]
+[ext_resource path="res://models/flower2.escn" type="PackedScene" id=3]
+[ext_resource path="res://models/flower3.escn" type="PackedScene" id=4]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 1, 1, 1.97286 )
+
+[node name="Flowers" type="Area" groups=[
+"static_object",
+]]
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+shape = SubResource( 1 )
+
+[node name="Scene Root" parent="." instance=ExtResource( 1 )]
+
+[node name="Scene Root2" parent="." instance=ExtResource( 2 )]
+transform = Transform( 0.570443, 0, -0.821337, 0, 1, 0, 0.821337, 0, 0.570443, -0.618258, 0, 1.48052 )
+
+[node name="Scene Root3" parent="." instance=ExtResource( 2 )]
+transform = Transform( -0.439763, 0, -0.898114, 0, 1, 0, 0.898114, 0, -0.439763, -0.182367, 0, -0.543108 )
+
+[node name="Scene Root4" parent="." instance=ExtResource( 2 )]
+transform = Transform( 0.958777, 0, -0.284159, 0, 1, 0, 0.284159, 0, 0.958777, 0.564694, 0, 0.298899 )
+
+[node name="Scene Root5" parent="." instance=ExtResource( 2 )]
+transform = Transform( -0.998926, 0, 0.046334, 0, 1, 0, -0.046334, 0, -0.998926, -0.253446, 0, -1.80088 )
+
+[node name="Scene Root6" parent="." instance=ExtResource( 3 )]
+transform = Transform( 0.745786, 0, -0.666186, 0, 1, 0, 0.666186, 0, 0.745786, -0.508722, 0, 0.81836 )
+
+[node name="Scene Root7" parent="." instance=ExtResource( 3 )]
+transform = Transform( -0.502764, 0, -0.864424, 0, 1, 0, 0.864424, 0, -0.502764, -0.188546, 0, -1.21169 )
+
+[node name="Scene Root8" parent="." instance=ExtResource( 4 )]
+transform = Transform( -0.17358, 0, -0.98482, 0, 1, 0, 0.98482, 0, -0.17358, 0.0636752, 0, 1.23558 )
+
+[node name="Scene Root9" parent="." instance=ExtResource( 4 )]
+transform = Transform( 0.155717, 0, -0.987802, 0, 1, 0, 0.987802, 0, 0.155717, 0.220155, 0, -1.58768 )
+
+[node name="Scene Root10" parent="." instance=ExtResource( 4 )]
+transform = Transform( -0.0309283, 0, -0.999522, 0, 1, 0, 0.999522, 0, -0.0309283, 0.0100417, 0, -0.0549906 )
+
+[node name="Scene Root11" parent="." instance=ExtResource( 4 )]
+transform = Transform( -0.858437, 0, -0.512919, 0, 1, 0, 0.512919, 0, -0.858437, 0.420129, 0, -0.585808 )
+
+[node name="Scene Root12" parent="." instance=ExtResource( 3 )]
+transform = Transform( 0.414309, 0, -0.910136, 0, 1, 0, 0.910136, 0, 0.414309, 0.453508, 0, 0.889901 )
+
+[node name="Scene Root13" parent="." instance=ExtResource( 4 )]
+transform = Transform( 0.197684, 0, -0.980266, 0, 1, 0, 0.980266, 0, 0.197684, -0.818256, 0, -0.922927 )

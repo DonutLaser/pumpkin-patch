@@ -1,0 +1,40 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://scripts/fence_gate.gd" type="Script" id=1]
+[ext_resource path="res://models/lock.escn" type="PackedScene" id=2]
+[ext_resource path="res://models/fence_gate_post_left.escn" type="PackedScene" id=3]
+[ext_resource path="res://models/fence_gate_left.escn" type="PackedScene" id=4]
+[ext_resource path="res://models/fence_gate_post_right.escn" type="PackedScene" id=5]
+[ext_resource path="res://models/fence_gate_right.escn" type="PackedScene" id=6]
+
+[sub_resource type="BoxShape" id=1]
+
+[node name="Fence Gate" type="Area" groups=[
+"static_object",
+]]
+script = ExtResource( 1 )
+open_speed = 128
+close_speed = 256
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+shape = SubResource( 1 )
+
+[node name="Lock" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.0022, 0.134953 )
+
+[node name="Left Post" parent="." instance=ExtResource( 3 )]
+
+[node name="Left Gate Pivot" type="Spatial" parent="."]
+editor/display_folded = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0 )
+
+[node name="Left Gate" parent="Left Gate Pivot" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0 )
+
+[node name="Right Post" parent="." instance=ExtResource( 5 )]
+
+[node name="Right Gate Pivot" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0 )
+
+[node name="Right Gate" parent="Right Gate Pivot" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0 )
